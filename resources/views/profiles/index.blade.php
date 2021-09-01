@@ -24,30 +24,36 @@
             </div>
             <div class="col-9 p-5">
                 <div>
-                    <h1>Home It</h1>
+                    <h1>{{ $user->username }}</h1>
                 </div>
                 <div class="d-flex">
                     <div class="pr-5"><strong>153</strong> posts</div>
                     <div class="pr-5"><strong>23k</strong> followers</div>
                     <div class="pr-5"><strong>212</strong> following</div>
                 </div>
-                <div class="pt-3 font-weight-bold"> homeit.com </div>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at fermentum lectus, at imperdiet massa.
-                    Cras condimentum lobortis metus, vel egestas nisi dignissim at. Sed accumsan metus ut est finibus
-                    iaculis. Suspendisse sed felis mauris. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                </div>
-                <div><a href="#">www.homeit.com</a></div>
+                <div class="pt-3 font-weight-bold"> {{ $user->profile->title }} </div>
+                <div>{{ $user->profile->bio }}</div>
+                <div><a href="#">{{ $user->profile->url ?? "Coming Soon" }}</a></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row pt-5">
             <div class="col-4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fAqoHecdeJesL-c9GQKJkGQskNNufHNrKQ&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fAqoHecdeJesL-c9GQKJkGQskNNufHNrKQ&usqp=CAU" alt="" class="w-100">
             </div>
             <div class="col-4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fAqoHecdeJesL-c9GQKJkGQskNNufHNrKQ&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fAqoHecdeJesL-c9GQKJkGQskNNufHNrKQ&usqp=CAU" alt="" class="w-100">
             </div>
             <div class="col-4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fAqoHecdeJesL-c9GQKJkGQskNNufHNrKQ&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3fAqoHecdeJesL-c9GQKJkGQskNNufHNrKQ&usqp=CAU" alt="" class="w-100">
+            </div>
+            <div class="col-4">
+                <div class="d-flex justify-content-between p-5">
+                    <a href="" class="pl-5 pt-5"> 
+                        <span style="font-size: 100px; color: rgb(173, 182, 182);">
+                             <i class="fas fa-plus-circle"></i>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
