@@ -7,8 +7,14 @@
                 <img src="/svg/home_it_2.svg" alt="" style="height: 200px" class="rounded-circle">
             </div>
             <div class="col-9 p-5">
-                <div>
+                <div class="d-flex justify-content-between align-items-baseline">
                     <h1>{{ $user->username }}</h1>
+                    <!--<div class="dropdown">
+                    <button class="btn btn-light" style="background-color: white" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v"></i></button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                    </ul>
+                    </div>-->
                 </div>
                 <div class="d-flex">
                     <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
