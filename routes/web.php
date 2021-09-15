@@ -3,6 +3,7 @@
 use App\Http\Controllers\FollowsController;
 use App\Http\Controllers\PostsController;
 use App\Http\Controllers\ProfilesController;
+use App\Http\Controllers\UsersController;
 use Illuminate\Support\Facades\Route;
 use App\Mail\NewUserWelcomeMail;
 
@@ -22,6 +23,8 @@ Auth::routes();
 Route::get('/email', function () {
     return new NewUserWelcomeMail();
 });
+
+Route::get('/users', [UsersController::class, 'show']);
 
 Route::post('follow/{user}', [FollowsController::class, 'store']);
 

@@ -71,7 +71,7 @@
                                     <a class="dropdown-item" href="/profile/{{Auth::user()->id}}">
                                         Profile
                                     </a>
-                                    <a class="dropdown-item" href="#">
+                                    <a class="dropdown-item" href="/users">
                                         Find Users
                                     </a>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
